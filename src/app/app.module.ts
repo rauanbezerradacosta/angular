@@ -1,20 +1,32 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+//components
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { Componente1Component } from './componente1/componente1.component';
-import { Componente2Component } from './componente2/componente2.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatButtonModule} from  '@angular/material/button';
+
+ //páginas
+import { HomeComponent } from './views/home/home.component';
+
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    Componente1Component,
-    Componente2Component
+    HomeComponent,
+  
+    
   ],
   imports: [
-    BrowserModule,
-    AppRoutingModule
+   BrowserModule,
+   AppRoutingModule,
+   BrowserAnimationsModule,
+   MatToolbarModule
+   MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
